@@ -6,22 +6,35 @@
         <link rel="stylesheet" href="clock.css" />
     </head>
     <body>
+          
         <div class="centerAlign">
-            <div class="js-clock">
-                <h1>  </h1>
+            <div class="redWrapper">
+                <span class="js-weather weather"></span>            
+                <div class="js-clock clock">
+                    <h1>  </h1>
+                </div>
+                <form class ="js-form form">
+                    <input type='text' placeholder='What is your name?' />
+                </form>
+                <h4 class="js-greetings greetings neonEffect"> </h4>
             </div>
-            <form class ="js-form form">
-                <input type='text' placeholder='What is your name?' />
-            </form>
-            <h4 class="js-greetings greetings"> </h4>
-        </div>  
             <form class="js-toDoForm">
                 <input type="text" placeholder="Write what to do" />
             </form>
-            <ul class="js-toDoList">
-            </ul>
-            <span class="js-weather  "></span>
-          
+        </div>
+        
+        <div class="toDoList">
+            <div class="pendingToDo">
+                <h2 id="pendingTitle">PENDING</h2>
+                <ul class="pendingList">
+                </ul>
+            </div>  
+            <div class="finishedToDo">
+                <h2 id="finishedTitle">FINISHED</h2>
+                <ul class="finishedList">
+                </ul>
+            </div>
+        </div>  
 
         <script src="clock.js"></script>
         <script src="greeting.js"></script>
