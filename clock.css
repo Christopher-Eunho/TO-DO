@@ -1,0 +1,23 @@
+.form,
+.greetings {
+ font-size : 60px; color: black;    display: none; 
+}
+body {
+    color: black;
+}
+.showing {
+    display: block 
+}
+.centerAlign {
+    text-align: center;
+}
+
+.bgImage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+}
